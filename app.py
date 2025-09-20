@@ -6,9 +6,9 @@ import json
 # Redis Cloud connection
 # ------------------------
 redis_client = redis.StrictRedis(
-    host="redis-17479.c84.us-east-1-2.ec2.redns.redis-cloud.com",     # e.g. redis-12345.c1.ap-south-1-1.ec2.cloud.redislabs.com
+    host="",     # e.g. redis-12345.c1.ap-south-1-1.ec2.cloud.redislabs.com
     port=17479,                 # Redis port
-    password="X5b97hVmeTvNGerdwJY65xUVitPjCNjN",
+    password="",
     decode_responses=True       # decode bytes to str
 )
 
@@ -64,4 +64,5 @@ if __name__ == "__main__":
 
     # Call again -> should come from cache
     user = get_user(1)
+
     print(user)
